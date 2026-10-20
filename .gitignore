@@ -11,4 +11,7 @@ venv/
 .streamlit/
 
 
-dist/
+dist/streamlit/secrets.toml
+
+streamlit/secrets.toml
+.DS_Store
