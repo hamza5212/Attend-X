@@ -30,9 +30,11 @@ Attend-X is an intelligent attendance management system designed to simplify cla
 
 ```text
 Attend-X/
+├── .gitignore
+├── README.md
+├── REPOSITORY_GUIDE.md
 ├── app.py
 ├── requirements.txt
-├── .gitignore
 ├── src/
 │   ├── components/
 │   │   ├── dialog_add_photo.py
@@ -42,6 +44,8 @@ Attend-X/
 │   │   ├── dialog_enroll.py
 │   │   ├── dialog_share_subject.py
 │   │   ├── dialog_voice_attendance.py
+│   │   ├── footer.py
+│   │   ├── header.py
 │   │   └── subject_card.py
 │   ├── database/
 │   │   ├── config.py
@@ -49,19 +53,23 @@ Attend-X/
 │   ├── pipeline/
 │   │   ├── face_pipeline.py
 │   │   └── voice_pipeline.py
-│   └── screens/
-│       ├── home_screen.py
-│       ├── student_screen.py
-│       └── teacher_screen.py
-└── streamlit/
-    └── secrets.toml  # Local configuration; not committed
+│   ├── screens/
+│   │   ├── home_screen.py
+│   │   ├── student_screen.py
+│   │   └── teacher_screen.py
+│   └── ui/
+│       └── base_layout.py
+└── streamlit/                 # Local ignored configuration, not committed
+    └── secrets.toml           # Do not commit or publish secret values
 ```
+
+The detailed file-by-file reference, function index, UI source map, and safe redesign guide is in [REPOSITORY_GUIDE.md](./REPOSITORY_GUIDE.md). Python package marker files (`__init__.py`) are omitted from this shortened tree.
 
 ## Getting Started
 
 ### Prerequisites
 
-- Python 3.10 or a compatible version supported by the project dependencies
+- Python 3.12 or newer
 - A Supabase project
 - Git
 
