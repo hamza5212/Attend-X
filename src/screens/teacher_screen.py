@@ -221,7 +221,7 @@ def teacher_tab_manage_subjects():
 
     with col2:
         if st.button('Create New Subject', width='stretch'):
-            create_subject_dialog(teacher_id)
+            dialog_create_subject(teacher_id)
 
 
     # LIST all SUBJECTS
